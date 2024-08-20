@@ -12,7 +12,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import multer from 'multer';
 import uploader from '@/utils/cloudinary';
-import {Cloudinary} from "@cloudinary/url-gen";
 
 const App = () => {
   const cld = new Cloudinary({cloud: {cloudName: 'dguargjvz'}});
