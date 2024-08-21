@@ -59,8 +59,8 @@ const Checkout = ({ cart, clearCart, subTotal, addToCart, removeFromCart }) => {
   const getPinCode = async (pin) => {
     let pins = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/pincode`);
     let pinJson = await pins.json();
-    
-    
+
+
     console.log(Object.keys(pinJson).includes(pin));
     console.log("heelo")
     if (Object.keys(pinJson).includes(pin)) {
@@ -150,7 +150,7 @@ const Checkout = ({ cart, clearCart, subTotal, addToCart, removeFromCart }) => {
     }
   }
   return (
-    
+
     <div className='container px-20 sm:m-auto min-h-screen'>
       <ToastContainer
         position="top-left"
@@ -165,6 +165,7 @@ const Checkout = ({ cart, clearCart, subTotal, addToCart, removeFromCart }) => {
         theme="light"
       />
       <Head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
         <title> Checkout - NexCritique </title>
       </Head>
       <h1 className='font-bold text-3xl my-8 text-center'>Checkout</h1>
