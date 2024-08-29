@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head';
-
+import Script from 'next/script'
 
 const Checkout = ({ cart, clearCart, subTotal, addToCart, removeFromCart }) => {
   const router = useRouter();
@@ -165,9 +165,9 @@ const Checkout = ({ cart, clearCart, subTotal, addToCart, removeFromCart }) => {
         theme="light"
       />
       <Head>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
         <title> Checkout - NexCritique </title>
       </Head>
+    
       <h1 className='font-bold text-3xl my-8 text-center'>Checkout</h1>
       <h2 className='text-gray-500 text-xl font-bold text-center'> Add Delivery Details </h2>
       <div className="mx-auto flex my-2">
