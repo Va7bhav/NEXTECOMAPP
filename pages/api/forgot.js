@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import Forgot from "@/models/Forgot";
+
 import User from "@/models/User";
 const handler = async (req, res) => {
 
